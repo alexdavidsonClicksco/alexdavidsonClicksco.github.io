@@ -1,0 +1,26 @@
+{
+  "name": "Power-Up Name",
+  "details": "The clicksco powerup (https://alexdavidsonclicksco.github.io) built to enfore parent/child relationship, work flow and possibly change card display based on user",
+  "icon": {
+    "url": "https://alexdavidsonclicksco.github.io/logo.png"
+  },
+  "author": "Alex Davidson",
+  "capabilities": [
+    "board-buttons",
+    "card-badges",
+    "card-detail-badges",
+    "attachment-sections",
+    "attachment-thumbnail",
+    "card-buttons",
+    "format-url",
+    "card-from-url",
+    "show-settings",
+    "authorization-status",
+    "show-authorization" 
+  ],
+  "connectors": {
+    "iframe": {
+      "url": "https://alexdavidsonclicksco.github.io/index.html"
+    }
+  }
+}
