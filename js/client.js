@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
 <html>
 <body>
-  <p>Header...</p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>
-    alert('Hello, World!')
+  $(document).ready(function(){
+          $(".open-card-composer js-open-card-composer").remove();
+  });
   </script>
-  <p>...Footer</p>
 </body>
 </html>
