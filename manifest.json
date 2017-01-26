@@ -1,6 +1,6 @@
 {
   "name": "Clicksco",
-  "details": "The clicksco powerup is built to enfore parent/child relationship, work flow and possibly change card display based on user",
+  "details": "The clicksco powerup is built to enforce parent/child relationship, work flow and possibly change card display based on user (Under development)",
   "icon": {
     "url": "https://alexdavidsonclicksco.github.io/logo.png"
   },
