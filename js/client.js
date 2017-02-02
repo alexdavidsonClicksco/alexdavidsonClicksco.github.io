@@ -1,11 +1,17 @@
-<!DOCTYPE HTML>
-<html>
-<body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script>
-  $(document).ready(function(){
-          $(".open-card-composer js-open-card-composer").remove();
-  });
-  </script>
-</body>
-</html>
+TrelloPowerUp.initialize({
+  'board-buttons': function(t, options){
+    return [{
+    icon: './images/button-pic.jpg',
+    text: 'My Button',
+    callback: function(t){
+      alert("I am an alert box!");
+    }}];
+  },
+  'show-settings': function(t, options){
+    return t.popup({
+      title: 'Settings',
+      url: './settings.html',
+      height: 184
+    });
+  }
+});
