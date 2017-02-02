@@ -4,14 +4,8 @@ TrelloPowerUp.initialize({
     icon: './images/button-pic.jpg',
     text: 'My Button',
     callback: function(t){
-      alert("I am an alert box!");
+      $(document).ready(function(){
+              $(".open-card-composer js-open-card-composer").remove();
     }}];
-  },
-  'show-settings': function(t, options){
-    return t.popup({
-      title: 'Settings',
-      url: './settings.html',
-      height: 184
-    });
   }
 });
