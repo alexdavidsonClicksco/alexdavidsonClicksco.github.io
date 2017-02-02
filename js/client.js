@@ -4,8 +4,7 @@ TrelloPowerUp.initialize({
     icon: './images/button-pic.jpg',
     text: 'My Button',
     callback: function(t){
-      var elem = document.getElementById("header");
-      elem.parentNode.removeChild(elem);
+      alert("Hello world");
     }}];
   }
 });
