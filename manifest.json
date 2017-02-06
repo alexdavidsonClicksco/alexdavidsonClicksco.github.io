@@ -1,26 +1,29 @@
 {
   "name": "Clicksco",
+  "description": "",
   "details": "The clicksco powerup is built to enforce parent/child relationship, work flow and possibly change card display based on user (Under development)",
   "icon": {
     "url": "./images/logo.png"
   },
   "author": "Alex Davidson",
   "capabilities": [
-    "board-buttons",
-    "card-badges",
-    "card-detail-badges",
     "attachment-sections",
     "attachment-thumbnail",
+    "board-buttons",
+    "callback",
+    "card-badges",
     "card-buttons",
-    "format-url",
+    "card-detail-badges",
     "card-from-url",
-    "show-settings",
-    "authorization-status",
-    "show-authorization"
+    "format-url",
+    "show-settings"
   ],
   "connectors": {
     "iframe": {
       "url": "./index.html"
     }
+  },
+  "recommend": {
+    "urls": []
   }
 }
