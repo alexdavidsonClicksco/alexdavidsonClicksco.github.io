@@ -14,6 +14,8 @@ t.render(function(){
   .spread(function(savedAdd, savedVegetable){
     if(savedAdd && /[a-z]+/.test(savedAdd)){
       addSelector.value = savedAdd;
+      alert("hello world")
+      alert(addSelector)
     }
     if(savedVegetable && /[a-z]+/.test(savedVegetable)){
       vegetableSelector.value = savedVegetable;
