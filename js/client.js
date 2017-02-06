@@ -106,12 +106,6 @@ var boardButtonCallback = function(t){
             return t.closePopup();
           });
         }
-      },
-      {
-        text: 'Hello',
-        callback: function(t){
-          return alert("hello world");
-        }
       }
     ]
   });
