@@ -14,8 +14,6 @@ t.render(function(){
   .spread(function(savedAdd, savedVegetable){
     if(savedAdd && /[a-z]+/.test(savedAdd)){
       addSelector.value = savedAdd;
-      var input = addSelector.options[addSelector.selectedIndex].text;
-      alert(input);
     }
     if(savedVegetable && /[a-z]+/.test(savedVegetable)){
       vegetableSelector.value = savedVegetable;
@@ -33,6 +31,8 @@ document.getElementById('save').addEventListener('click', function(){
     return t.set('board', 'private', 'add', addSelector.value);
   })
   .then(function(){
+    var input = addSelector.options[addSelector.selectedIndex].text;
+    alert(input);
     t.closePopup();
   })
 })
