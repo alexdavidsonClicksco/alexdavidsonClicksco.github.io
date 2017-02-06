@@ -2,7 +2,7 @@
   "name": "Clicksco",
   "details": "The clicksco powerup is built to enforce parent/child relationship, work flow and possibly change card display based on user (Under development)",
   "icon": {
-    "url": "./images/logo.png"
+    "url": "images/logo.png"
   },
   "author": "Alex Davidson",
   "capabilities": [
@@ -16,11 +16,11 @@
     "card-from-url",
     "show-settings",
     "authorization-status",
-    "show-authorization" 
+    "show-authorization"
   ],
   "connectors": {
     "iframe": {
-      "url": "./index.html"
+      "url": "index.html"
     }
   }
 }
