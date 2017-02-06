@@ -14,7 +14,6 @@ t.render(function(){
   .spread(function(savedAdd, savedVegetable){
     if(savedAdd && /[a-z]+/.test(savedAdd)){
       addSelector.value = savedAdd;
-      alert(addSelector.value)
     }
     if(savedVegetable && /[a-z]+/.test(savedVegetable)){
       vegetableSelector.value = savedVegetable;
@@ -25,6 +24,10 @@ t.render(function(){
     .done();
   })
 });
+
+if (addSelector.value == "no"){
+  alert("add = no")
+}
 
 document.getElementById('save').addEventListener('click', function(){
   return t.set('board', 'private', 'vegetable', vegetableSelector.value)
