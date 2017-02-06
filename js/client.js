@@ -107,6 +107,10 @@ var boardButtonCallback = function(t){
           });
         }
       }
+        text: 'Hello',
+        callback: function(t){
+          return alert("hello world");
+        }
     ]
   });
 };
