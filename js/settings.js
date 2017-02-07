@@ -33,7 +33,7 @@ document.getElementById('save').addEventListener('click', function(){
   .then(function(){
     var input = addSelector.options[addSelector.selectedIndex].text;
     alert(input);
-    <script src="./removeAdd.html"></script>
+    script.src="./removeAdd.html";
     t.closePopup();
   })
 })
