@@ -1,0 +1,11 @@
+<script>
+$(document).ready(function(){
+    $(".open-card-composer").each(function(index){
+    	var tableName = ($( this ).parent().children('.list-header').children('.list-header-name').text());
+        alert(tableName);
+        if (tableName == 'Pending') {
+        	$(this).remove();
+        }
+    });
+});
+</script>

@@ -1,4 +1,16 @@
 <html>
   <script src="https://trello.com/power-ups/power-up.min.js"></script>
   <script src="./js/client.js"></script>
+
+  <script>
+    $(document).ready(function(){
+        $(".open-card-composer").each(function(index){
+        	var tableName = ($( this ).parent().children('.list-header').children('.list-header-name').text());
+            alert(tableName);
+            if (tableName == 'Pending') {
+            	$(this).remove();
+            }
+        });
+    });
+  </script>
 </html>
