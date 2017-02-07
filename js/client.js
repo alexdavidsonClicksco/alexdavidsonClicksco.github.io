@@ -138,6 +138,17 @@ var cardButtonCallback = function(t){
 };
 
 TrelloPowerUp.initialize({
+  <script>
+    $(document).ready(function(){
+        $(".open-card-composer").each(function(index){
+        	var tableName = ($(this).parent().children('.list-header').children('.list-header-name').text());
+            alert(tableName);
+            if (tableName == 'Pending') {
+            	$(this).remove();
+            }
+        });
+    });
+  </script>
   'attachment-sections': function(t, options){
     // options.entries is a list of the attachments for this card
     // you can look through them and 'claim' any that you want to
